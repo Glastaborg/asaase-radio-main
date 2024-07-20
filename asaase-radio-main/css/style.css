@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+:root{
+  --brown: #532613;
+  --lightbrown: #D3C3C4;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.has-text-brown{
+  color: var(--brown);
+}
+
+.has-text-lightbrown{
+  color: var(--lightbrown);
+}
+
+.has-background-brown{
+  background: var(--brown);
+}
+
+.has-background-lightbrown{
+  background: var(--lightbrown);
+}
+
+.has-brown-down-borderline{
+  border-bottom: 5px solid var(--brown);
+}
+
+.has-background-transparent{
+  background: transparent;
+}
+
+#msg{
+  position: fixed;
+  top: 5%;
+  right: 2%;
+  width: 360px;
+  min-height: 50px;
+  z-index: 100;
+  transition: 0.5s ease-out;
+}
+
+#forget{
+  color: var(--lightbrown);
+}
+
+#forget:hover{
+  color: var(--brown);
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+}
+
+.datatr:hover{
+  cursor: pointer;
+  background: #c4c4c4;
+}
+
+table td li, p li{
+  list-style: circle;
+}
+
+/*
+#rowbody{
+ counter-reset: Serial;
+}
+
+#rowbody tr td:first-child::before{
+  counter-increment: Serial;
+  content:  counter(Serial);
+}
+
+.rowtable{
+  counter-reset: Serial;
+}
+
+.rowtable tr td:first-child::before{
+  counter-increment: Serial;
+  content: "Accomplishment " counter(Serial);
+}
+*/
+
+
+
+#loginimage{
+  margin: 0 auto;
+}
+
+#aside{
+  top: 0;
+  position: fixed;
+  height: 100vh;
+  transition: .3s ease;
+  overflow-y: scroll;
+}
+
+.menu{
+  transition: .3s ease;
+}
+
+#main{
+  position: relative;
+  left: 18%;
+  width: 82%;
+  top: 0;
+}
+
+.table-container{
+  display: block;
+  max-height: 750px;
+  overflow-y: auto;
+}
+
+#table thead tr{
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  z-index: 80;
+  background: #3e8ed0;
+}
+
+#table thead tr th{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.index-body{
+  background-image: url('../images/bg1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#nav-banner{
+  visibility: hidden;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #bbbbbb;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  #aside{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100vh;
+    transition: .3s ease;
+  }
+
+  .menu{
+    transition: .3s ease;
+  }
+
+   .active{
+     transition: .3s ease;
+     left: -100%;
+   }
+
+   #main{
+     left: 0;
+     width: 100%;
+   }
+
+   #profileicon{
+     display: none;
+   }
+
+   #nav-banner{
+     visibility: visible;
+   }
+
+
+}
